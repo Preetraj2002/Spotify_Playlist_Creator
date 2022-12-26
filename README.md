@@ -2,7 +2,7 @@
 
 # Objective
 
-The scripts uses `BeautifulSoup` to scrap out the top 100 songs on the Billboard on a specified data which is then stored in list. 
+The scripts uses `BeautifulSoup` to scrap out the top 100 songs on the Billboard on a specified date which is then stored in list. 
 
 ```
 Which year do you want to Travel to? Type the date in this format YYYY-MM-DD: 2015-12-09
