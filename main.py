@@ -3,18 +3,18 @@ from bs4 import BeautifulSoup
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from pprint import pprint
+from os import environ
 
 date=input("Which year do you want to Travel to? Type the date in this format YYYY-MM-DD: ")
-date="2015-12-09"
 year=date.split("-")[0]
-print(year)
+# print(year)
 API_endpoint="https://www.billboard.com/charts/hot-100/"
 
 
-ClientID="57049428fe9e4ec09f0bfc0389f1d574"
-ClientSecret="2a329ce362844536be8cd01f285d64f9"
+ClientID=environ["Spotify_ClientID"]
+ClientSecret=environ["Spotify_ClientSecret"]
 redirect_url="http://example.com"
-prof_id= "31cvtcxb5uruajzeoea2c3qmrtiu"
+prof_id= environ["Spotify_profID"]
 
 
 response = requests.get(url=f"https://www.billboard.com/charts/hot-100/{date}/")
