@@ -15,4 +15,4 @@ Stitches
 ... and so on 
 ```
 
-The scripts then loop through the list and find each song on spotify and adds it to a newly created playlist on the client's spotify account. In order to interact with the spotify we use `spotify` library and `SpotifOAuth` class from `spotify.oauth2` module.
+The scripts then loop through the list and find each song on spotify and adds it to a newly created playlist on the client's spotify account. In order to interact with the spotify we use `spotify` library and `SpotifOAuth` class from `spotify.oauth2` module to authenticate the client.
